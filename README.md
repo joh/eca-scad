@@ -3,7 +3,7 @@
 Elementary Cellular Automata (ECA) in OpenSCAD
 
 Small library to evolve ECAs in OpenSCAD.
-Use it to create nice textures for your 3D objects :)
+Use it to create nice [textures](https://github.com/joh/texture-surface) for your 3D objects :)
 
 <img src="eca-demo.png" width="50%">
 
