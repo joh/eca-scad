@@ -1,5 +1,11 @@
 /*
- * Elementary Cellular Automata
+ * Elementary Cellular Automata in OpenSCAD
+ *
+ * by Johannes H. Jensen <joh@pseudoberries.com>
+ * https://github.com/joh/eca-scad
+ *
+ * Copyright (c) 2021-2022 by Johannes H. Jensen
+ * License: MIT, see LICENSE for more details.
  */
 
 // periodic neighborhood
@@ -51,20 +57,3 @@ module visualize(state, cell_size=1, pad=0) {
         }
     }
 }
-
-
-/*
-init = [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0];
-//init = [0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0];
-rule = 30;
-steps = len(init);
-cell_size = 2;
-state = evolve([init], steps, rule);
-
-//echo(evolve([init], steps, rule));
-difference() {
-cube([cell_size*(len(state[0])+4), cell_size*(len(state)+4), .2]);
-translate([2*cell_size,2*cell_size,-.1])
-visualize(state, cell_size);
-}
-*/
