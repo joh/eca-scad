@@ -41,7 +41,6 @@ function evolve(state, n, rule) =
             c = take(state[0], n),
             bit = shl(c[0], 2) + shl(c[1], 1) + c[2],
             next = shr(and(rule, shl(1, bit)), bit)//,
-            //echo("n", n, "c", c, "bit", bit, "next", next, "rule", rule)
         )
         shr(and(rule, shl(1, bit)), bit)
     ]], n-1, rule));
